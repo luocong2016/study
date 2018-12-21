@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    password: lutz
+    url: jdbc:mysql://119.27.186.126/mybatis?characterEncoding=utf-8&useSSL=false
