@@ -1,0 +1,30 @@
+2018-12-26 16:42:35,940:DEBUG http-nio-8081-exec-3 (LogFormatUtils.java:90) - GET "/account/1", parameters={}
+2018-12-26 16:42:35,941:DEBUG http-nio-8081-exec-3 (AbstractHandlerMapping.java:420) - Mapped to public com.example.demo.mybatis.Account com.example.demo.mybatis.AccountController.getAccountById(int)
+2018-12-26 16:42:35,942:DEBUG http-nio-8081-exec-3 (OpenEntityManagerInViewInterceptor.java:86) - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2018-12-26 16:42:35,942:DEBUG http-nio-8081-exec-3 (JpaTransactionManager.java:355) - Found thread-bound EntityManager [SessionImpl(1487828981<open>)] for JPA transaction
+2018-12-26 16:42:35,942:DEBUG http-nio-8081-exec-3 (AbstractPlatformTransactionManager.java:372) - Creating new transaction with name [com.example.demo.mybatis.AccountService.findAccount]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2018-12-26 16:42:35,942:DEBUG http-nio-8081-exec-3 (TransactionImpl.java:56) - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2018-12-26 16:42:35,942:DEBUG http-nio-8081-exec-3 (TransactionImpl.java:78) - begin
+2018-12-26 16:42:36,051:DEBUG http-nio-8081-exec-3 (JpaTransactionManager.java:419) - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6538f8da]
+2018-12-26 16:42:36,051:DEBUG http-nio-8081-exec-3 (SqlSessionUtils.java:97) - Creating a new SqlSession
+2018-12-26 16:42:36,051:DEBUG http-nio-8081-exec-3 (SqlSessionUtils.java:128) - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fabf147]
+2018-12-26 16:42:36,051:DEBUG http-nio-8081-exec-3 (SpringManagedTransaction.java:87) - JDBC Connection [HikariProxyConnection@1135263708 wrapping com.mysql.cj.jdbc.ConnectionImpl@7913cdbb] will be managed by Spring
+2018-12-26 16:42:36,051:DEBUG http-nio-8081-exec-3 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, name as name, money as money from account where id = ? 
+2018-12-26 16:42:36,052:DEBUG http-nio-8081-exec-3 (BaseJdbcLogger.java:159) - ==> Parameters: 1(Integer)
+2018-12-26 16:42:36,152:DEBUG http-nio-8081-exec-3 (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-12-26 16:42:36,153:DEBUG http-nio-8081-exec-3 (SqlSessionUtils.java:186) - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fabf147]
+2018-12-26 16:42:36,153:DEBUG http-nio-8081-exec-3 (SqlSessionUtils.java:284) - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fabf147]
+2018-12-26 16:42:36,153:DEBUG http-nio-8081-exec-3 (SqlSessionUtils.java:310) - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fabf147]
+2018-12-26 16:42:36,153:DEBUG http-nio-8081-exec-3 (SqlSessionUtils.java:315) - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fabf147]
+2018-12-26 16:42:36,153:DEBUG http-nio-8081-exec-3 (AbstractPlatformTransactionManager.java:743) - Initiating transaction commit
+2018-12-26 16:42:36,153:DEBUG http-nio-8081-exec-3 (JpaTransactionManager.java:527) - Committing JPA transaction on EntityManager [SessionImpl(1487828981<open>)]
+2018-12-26 16:42:36,153:DEBUG http-nio-8081-exec-3 (TransactionImpl.java:95) - committing
+2018-12-26 16:42:36,266:DEBUG http-nio-8081-exec-3 (JpaTransactionManager.java:623) - Not closing pre-bound JPA EntityManager after transaction
+2018-12-26 16:42:36,267:DEBUG http-nio-8081-exec-3 (AbstractMessageConverterMethodProcessor.java:267) - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2018-12-26 16:42:36,267:DEBUG http-nio-8081-exec-3 (LogFormatUtils.java:90) - Writing [Account{id=1, name='122', money=1212.0}]
+2018-12-26 16:42:36,268:DEBUG http-nio-8081-exec-3 (OpenEntityManagerInViewInterceptor.java:111) - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2018-12-26 16:42:36,269:DEBUG http-nio-8081-exec-3 (EntityManagerFactoryUtils.java:418) - Closing JPA EntityManager
+2018-12-26 16:42:36,269:DEBUG http-nio-8081-exec-3 (FrameworkServlet.java:1130) - Completed 200 OK
+2018-12-26 16:42:57,872:DEBUG HikariPool-1 housekeeper (HikariPool.java:411) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-12-26 16:43:27,873:DEBUG HikariPool-1 housekeeper (HikariPool.java:411) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-12-26 16:43:57,874:DEBUG HikariPool-1 housekeeper (HikariPool.java:411) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)

@@ -1,0 +1,37 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    password: lutz
+    url: jdbc:mysql://119.27.186.126/mybatis?characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+  jpa:
+    show-sql: true
+
+girl:
+  name: B
+  age: 18
+
+my:
+  name: lutz
+  age: 19
+  number: ${random.int}
+  uuid: ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hi, I'm ${my.name}
+
+logging:
+  config: classpath:log4j2.yml
+#  level:
+#    org:
+#      hibernate:
+#        SQL: debug
+#      springframework:
+#        web: debug
+#    com:
+#     example:
+#       demo: debug
+
